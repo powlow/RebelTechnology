@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 420.0, 194.0, 766.0, 495.0 ],
+		"rect" : [ 211.0, 451.0, 766.0, 495.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,57 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"clipheight" : 25.0,
+					"data" : 					{
+						"clips" : [ 							{
+								"absolutepath" : "Clap 01.wav",
+								"filename" : "Clap 01.wav",
+								"filekind" : "audiofile",
+								"loop" : 1,
+								"content_state" : 								{
+									"originaltempo" : [ 120.0 ],
+									"basictuning" : [ 440 ],
+									"quality" : [ "basic" ],
+									"formant" : [ 1.0 ],
+									"mode" : [ "basic" ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
+									"timestretch" : [ 0 ],
+									"formantcorrection" : [ 0 ],
+									"slurtime" : [ 0.0 ],
+									"speed" : [ 1.0 ],
+									"pitchshift" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"play" : [ 0 ],
+									"originallengthms" : [ 0.0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"id" : "obj-19",
+					"maxclass" : "playlist~",
+					"numinlets" : 1,
+					"numoutlets" : 5,
+					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
+					"patching_rect" : [ 517.0, 277.0, 166.0, 25.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "scope~",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 262.0, 349.0, 130.0, 130.0 ],
+					"range" : [ 0.0, 48000.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-4",
 					"maxclass" : "newobj",
@@ -258,8 +309,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 90.0, 303.0, 140.0, 22.0 ],
-					"text" : "gen~ @gen Dev_default"
+					"patching_rect" : [ 90.0, 303.0, 170.0, 22.0 ],
+					"text" : "gen~ @gen GranularMadness"
 				}
 
 			}
@@ -394,6 +445,13 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-7", 1 ],
+					"source" : [ "obj-1", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
 					"source" : [ "obj-1", 0 ]
 				}
@@ -438,6 +496,22 @@
 				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
 					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 1 ],
+					"order" : 0,
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"order" : 1,
+					"source" : [ "obj-19", 0 ]
 				}
 
 			}
@@ -492,10 +566,16 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "Dev_default.gendsp",
-				"bootpath" : "~/Documents/GitHub/OwlGenPatches/Dev_default/code",
-				"patcherrelativepath" : "../../../../OwlGenPatches/Dev_default/code",
+				"name" : "GranularMadness.gendsp",
+				"bootpath" : "~/Documents/GitHub/OWL/GranularMadness/code",
+				"patcherrelativepath" : "../code",
 				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Clap 01.wav",
+				"bootpath" : "C74:/packages/MaxIntroLessons/media",
+				"type" : "WAVE",
 				"implicit" : 1
 			}
  ],
