@@ -47,21 +47,21 @@
 								"filekind" : "audiofile",
 								"loop" : 1,
 								"content_state" : 								{
+									"quality" : [ "basic" ],
+									"slurtime" : [ 0.0 ],
 									"originaltempo" : [ 120.0 ],
 									"basictuning" : [ 440 ],
-									"quality" : [ "basic" ],
-									"formant" : [ 1.0 ],
-									"mode" : [ "basic" ],
-									"pitchcorrection" : [ 0 ],
-									"followglobaltempo" : [ 0 ],
-									"timestretch" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"slurtime" : [ 0.0 ],
 									"speed" : [ 1.0 ],
 									"pitchshift" : [ 1.0 ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
+									"originallengthms" : [ 0.0 ],
+									"timestretch" : [ 0 ],
+									"formantcorrection" : [ 0 ],
+									"mode" : [ "basic" ],
+									"formant" : [ 1.0 ],
 									"originallength" : [ 0.0, "ticks" ],
-									"play" : [ 0 ],
-									"originallengthms" : [ 0.0 ]
+									"play" : [ 0 ]
 								}
 
 							}
@@ -132,7 +132,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 84.0, 129.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -569,6 +569,12 @@
 				"name" : "GranularMadness.gendsp",
 				"bootpath" : "~/Documents/GitHub/OWL/GranularMadness/code",
 				"patcherrelativepath" : "../code",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "simpleLFO.gendsp",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
