@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 408.0, 308.0, 766.0, 520.0 ],
+		"rect" : [ 392.0, 251.0, 766.0, 520.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 534.0, 369.0, 72.0, 22.0 ],
+					"text" : "phasor~ 0.5"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"clipheight" : 25.0,
 					"data" : 					{
 						"clips" : [ 							{
@@ -47,21 +59,21 @@
 								"filekind" : "audiofile",
 								"loop" : 1,
 								"content_state" : 								{
-									"originallengthms" : [ 0.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"play" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"speed" : [ 1.0 ],
+									"mode" : [ "basic" ],
 									"originaltempo" : [ 120.0 ],
 									"basictuning" : [ 440 ],
-									"speed" : [ 1.0 ],
-									"formant" : [ 1.0 ],
+									"slurtime" : [ 0.0 ],
 									"pitchcorrection" : [ 0 ],
 									"followglobaltempo" : [ 0 ],
-									"timestretch" : [ 0 ],
-									"slurtime" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
 									"pitchshift" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"quality" : [ "basic" ],
-									"play" : [ 0 ],
-									"mode" : [ "basic" ]
+									"timestretch" : [ 0 ],
+									"formantcorrection" : [ 0 ],
+									"originallengthms" : [ 0.0 ],
+									"quality" : [ "basic" ]
 								}
 
 							}
