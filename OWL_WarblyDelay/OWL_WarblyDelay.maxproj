@@ -2,8 +2,8 @@
 	"name" : "OWL_WarblyDelay",
 	"version" : 1,
 	"creationdate" : 3656591358,
-	"modificationdate" : 3656591358,
-	"viewrect" : [ 0.0, 0.0, 300.0, 500.0 ],
+	"modificationdate" : 3656592840,
+	"viewrect" : [ 25.0, 104.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -23,6 +23,10 @@
 		}
 ,
 		"code" : 		{
+			"OWL_WarblyDelay.gendsp" : 			{
+				"kind" : "gendsp",
+				"local" : 1
+			}
 
 		}
 
